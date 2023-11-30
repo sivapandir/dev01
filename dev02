@@ -1,4 +1,7 @@
 
-ne
-two
-three
+ resource "aws_instance" "myec2" {
+    ami = "ami-021f7978361c18b01"
+    instance_type = var.instancetype
+    tags = {
+      Name="Pandi EC2"
+          }
